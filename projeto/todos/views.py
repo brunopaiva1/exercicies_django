@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
-def home(request):
-    return render(request, "todos/home.html")
+def todo_list(request):
+    nome = "Bruno"
+    return render(request, "todos/todo_list.html", {"nome": nome})
